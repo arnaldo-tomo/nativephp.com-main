@@ -69,7 +69,7 @@
 
             {{-- 👇 Temporarily disabled in favor of the v1 announcement button --}}
             {{-- Version badge --}}
-            {{--
+{{--
                 <div
                 class="hidden rounded-full bg-gray-200/60 px-2 py-1 text-xs text-gray-600 lg:block dark:bg-[#16182b] dark:text-[#747ee6] dark:ring-1 dark:ring-cloud"
                 aria-label="Version information"
@@ -77,8 +77,8 @@
                 <a href="/docs/desktop/1/getting-started/releasenotes">
                 {{ $electronGitHubVersion }}
                 </a>
-                </div>
-            --}}
+                </div> --}}
+
         </div>
 
         {{-- Right side --}}
@@ -98,7 +98,7 @@
             </div>
 
             {{-- Mobile menu --}}
-            <x-mobile-menu />
+            {{-- <x-mobile-menu /> --}}
 
             {{-- Desktop menu --}}
             <div
@@ -124,18 +124,7 @@
                     aria-hidden="true"
                 ></div>
 
-                {{-- Link --}}
-                <a
-                    href="{{ route('early-adopter') }}"
-                    @class([
-                        'transition duration-200',
-                        'font-medium' => request()->routeIs('early-adopter*'),
-                        'opacity-60 hover:opacity-100' => ! request()->routeIs('early-adopter*'),
-                    ])
-                    aria-current="{{ request()->routeIs('early-adopter*') ? 'page' : 'false' }}"
-                >
-                    Mobile
-                </a>
+
 
                 {{-- Decorative circle --}}
                 <div
