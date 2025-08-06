@@ -23,7 +23,7 @@ Route::redirect('/docs/desktop/1/getting-started/sponsoring', '/sponsor');
 Route::redirect('/discord', 'https://discord.gg/X62tWNStZK');
 
 Route::view('/', 'welcome')->name('welcome');
-Route::view('mobile', 'early-adopter')->name('early-adopter');
+// Route::view('mobile', 'early-adopter')->name('early-adopter');
 Route::view('laracon-us-2025-giveaway', 'laracon-us-2025-giveaway')->name('laracon-us-2025-giveaway');
 Route::redirect('ios', 'mobile');
 Route::redirect('t-shirt', 'mobile');
