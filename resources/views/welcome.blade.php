@@ -28,8 +28,8 @@
                 "
                 class="truncate text-6xl font-extrabold uppercase min-[400px]:text-7xl md:text-8xl"
             >
-                Build
-                <span class="sr-only">Laravel So</span>
+                {{-- LARVEL Lusophone --}}
+                {{-- <span class="sr-only">Laravel</span> --}}
             </h1>
             {{-- Native --}}
             <div class="relative">
@@ -49,10 +49,10 @@
                             )
                         }
                     "
-                    class="truncate text-6xl font-extrabold text-violet-400 uppercase min-[400px]:text-7xl md:text-8xl"
+                    class="truncate text-6xl font-extrabold text-red-800 uppercase min-[400px]:text-7xl md:text-8xl"
                     aria-hidden="true"
                 >
-                    Native
+                    Laravel
                 </h1>
 
                 {{-- Blurred circle --}}
@@ -279,7 +279,7 @@
                 class="truncate text-6xl font-extrabold uppercase min-[400px]:text-7xl md:text-8xl"
                 aria-hidden="true"
             >
-                PHP Apps
+    Lusophone
             </h1>
 
             {{-- Shiny line --}}

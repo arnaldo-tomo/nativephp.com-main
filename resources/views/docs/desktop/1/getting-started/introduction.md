@@ -3,93 +3,79 @@ title: Introduction
 order: 001
 ---
 
-## Hello, NativePHP!
+## Olá, Laravel Lusophone!
 
-NativePHP is a new framework for rapidly building rich, native desktop applications using PHP. If you're already a PHP
-developer, you'll feel right at home. If you're new to PHP, we think you'll find NativePHP easy to pick up and use.
-Whatever your path, we think you're going to be productive quickly.
+O **Laravel Lusophone** é um pacote poderoso para criar aplicações Laravel totalmente localizadas para o mundo lusófono. Se você é um desenvolvedor PHP e já trabalha com Laravel, vai se sentir em casa. Se é novo no Laravel, vai achar o Lusophone fácil de aprender e usar. Não importa o seu caminho, você estará construindo aplicações incríveis em minutos!
 
-**NativePHP makes distributing PHP apps to users on any platform a cinch.**
+**Laravel Lusophone torna a criação de aplicações em português para qualquer país lusófono extremamente simples.**
 
-NativePHP is taking the world by storm, enabling PHP developers to create true cross-platform, native apps
-using the tools and technologies they already know: HTML, CSS, Javascript, and, of course, PHP.
+Com este pacote, você pode oferecer experiências personalizadas para usuários em Portugal, Brasil, Moçambique, Angola e outros países de língua portuguesa, com traduções, validações e formatações automáticas adaptadas a cada região.
 
-## Why PHP?
+## Por que Laravel Lusophone?
 
-**PHP is great.** It's a mature language that has been honed for 30 years in one of the most ruthless environments:
-the web.
+**Português é mais que Brasil e Portugal.** Com mais de 260 milhões de falantes em 8 países, o português é uma língua diversa, com nuances culturais e técnicas únicas. O Laravel Lusophone foi criado para atender a essa diversidade, garantindo que sua aplicação se adapte automaticamente ao contexto de cada usuário.
 
-Despite the odds, it remains one of the most used languages worldwide and continues to grow in usage every day.
+- **Detecção Automática**: Identifica a região do usuário (baseado em IP, headers ou preferências) e ajusta a aplicação.
+- **Validações Universais**: Regras como `lusophone_tax_id` validam NIF, CPF ou NUIT automaticamente, sem esforço.
+- **Formatação Inteligente**: Moedas, datas e números no formato local (ex.: "1.500,50 MT" em Moçambique, "R$ 1.500,50" no Brasil).
+- **Contexto Cultural**: Adapta automaticamente a formalidade e terminologia (ex.: "telemóvel" em Portugal, "celular" em Moçambique).
+- **Zero Configuração**: Funciona assim que você instala, mas é altamente personalizável.
 
-Its shared-nothing approach to memory safety makes it an unexpectedly productive candidate for building native
-applications.
+## O que é o Laravel Lusophone?
 
-Its focus on HTTP as a paradigm for building applications lends itself towards using the incredibly
-accessible web technologies to build rich UIs that can feel at home on any platform. 
+O Laravel Lusophone é um pacote completo para localização em português, combinando:
 
-## What exactly is NativePHP?
+1. Uma coleção de classes fáceis de usar para traduções, validações e formatações regionais.
+2. Ferramentas para detectar automaticamente a região do usuário e adaptar a aplicação.
+3. Suporte nativo para todos os países lusófonos, com validações específicas (NIF, CPF, NUIT) e formatações locais.
 
-Strictly speaking, NativePHP is a combination of elements:
+## O que o Laravel Lusophone *não* é
 
-1. A collection of easy-to-use classes to enable you to interact with a variety of host operating system features.
-2. A set of tools to enable building and bundling your native application.
-3. A static PHP runtime that allows your app to run on any user's device with zero effort on their part.
+- **Não é um pacote que você precisa aprender do zero.** Ele se integra perfeitamente ao Laravel, aproveitando o que você já sabe.
+- **Não é apenas para Brasil ou Portugal.** Suporta todos os países lusófonos, de Moçambique a Timor-Leste.
+- **Não é complicado.** Instale com um comando e comece a usar imediatamente.
+- **Não é rígido.** Você pode personalizar traduções, validações e formatos conforme necessário.
 
-## What NativePHP isn't
+## O que vem na caixa?
 
-NativePHP is **not a completely new framework that you need to learn**. It builds on top of the incredible affordances
-and ecosystem that Laravel provides. Before using NativePHP, you'll want to be familiar with building web applications
-using Laravel.
+O Laravel Lusophone vem com tudo que você precisa para criar aplicações multilíngues incríveis:
 
-NativePHP is **not a GUI framework**. We don't want to tell you how to build your app. You can choose whatever UI toolset
-makes you and your team feel most productive. Building a React front-end? No problem. Vue? Sure. Livewire or Inertia?
-Doesn't matter! Plain old HTML and CSS? You got it. Tailwind, Bootstrap, Material UI: whatever you want.
+- 🌍 Suporte para 8 países lusófonos (Portugal, Brasil, Moçambique, Angola, Cabo Verde, Guiné-Bissau, São Tomé e Príncipe, Timor-Leste).
+- ✅ Validações automáticas para documentos (NIF, CPF, NUIT), telefones e códigos postais.
+- 💰 Formatação de moedas, datas e números adaptada a cada região.
+- 🎭 Traduções contextuais que respeitam a formalidade local (ex.: formal em Portugal, mista em Moçambique).
+- 🛠️ Comandos Artisan para configuração, análise e testes.
 
-NativePHP is **not some new, custom fork of PHP**. This is the good new PHP you know and love.
+## O que posso construir com o Laravel Lusophone?
 
-It's also not an extension that you need to figure out and install into PHP. You're just a `composer require` away from
-awesome.
+Qualquer aplicação Laravel que precise atender usuários em países lusófonos! Alguns exemplos:
 
-## What's in the box?
+- 🏪 Um e-commerce que valida CPFs no Brasil e NIFs em Portugal automaticamente.
+- 🏦 Um sistema bancário com formatação de moeda local (ex.: "Kz" em Angola, "€" em Portugal).
+- 📱 Uma API mobile que retorna mensagens e validações adaptadas à região do usuário.
+- 📝 Um formulário de contato que usa "telemóvel" ou "celular" conforme o país.
 
-NativePHP comes with a bunch of useful features out of the box, including:
+As possibilidades são infinitas. O Laravel Lusophone já é usado por empresas, universidades e startups em todo o mundo lusófono. [Confira projetos incríveis criados pela comunidade](https://github.com/arnaldo-tomo/laravel-lusophone)!
 
-- Window management
-- Menu management
-- File management
-- Database support (SQLite)
-- Native notifications
+## O que vem a seguir?
 
-All of this and more is explored in the rest of these docs.
+Explore a documentação! Tentamos torná-la o mais completa possível, mas se algo estiver faltando, sinta-se à vontade para [contribuir](https://github.com/arnaldo-tomo/laravel-lusophone).
 
-## What can I build with NativePHP?
+O Laravel Lusophone é open source e está disponível no [GitHub](https://github.com/arnaldo-tomo/laravel-lusophone).
 
-Honestly, anything you want. We believe NativePHP is going to empower thousands of developers to build all kinds of
-applications. The only limit is your imagination.
+Pronto para começar? [Veja como instalar](installation).
 
-You could build a menubar app that lets you manage your cron jobs, or a cool new launcher app, or a screen recorder
-that puts cowboy hats on every smiley-face emoji it sees.
+## Créditos
 
-(You should totally build that last one.)
-
-Need some inspiration? [Check out our repository of awesome projects](https://github.com/NativePHP/awesome-nativephp) created by people like you!
-
-## What's next?
-
-Go read the docs! We've tried to make them as comprehensive as possible, but if you find something missing, please
-feel free to [contribute](https://github.com/nativephp/nativephp.com).
-
-This site and all the NativePHP for Desktop repositories are open source and available on [GitHub](https://github.com/nativephp).
-
-Ready to jump in? [Let's get started](installation).
-
-## Credits
-
-NativePHP wouldn't be possible without the following projects and the hard work of all of their wonderful contributors:
+O Laravel Lusophone não seria possível sem:
 
 - [PHP](https://php.net)
-- [Electron](https://electronjs.org)
-- [Tauri](https://tauri.app)
 - [Laravel](https://laravel.com)
-- [Symfony](https://symfony.com)
-- [Static PHP CLI](https://github.com/crazywhalecc/static-php-cli/)
+- A incrível comunidade lusófona de desenvolvedores 🌍
+
+## Início Rápido - 5 Minutos
+
+### 1. Instalação (30 segundos)
+
+```bash
+composer require arnaldotomo/laravel-lusophone
