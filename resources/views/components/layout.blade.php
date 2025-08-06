@@ -31,9 +31,9 @@
             $seoTitle = SEOMeta::getTitle();
             $defaultSeoTitle = config('seotools.meta.defaults.title');
         @endphp
-        
+
         @if($seoTitle === $defaultSeoTitle || empty($seoTitle))
-            <title>NativePHP{{ isset($title) ? ' | ' . $title : '' }}</title>
+            <title>{{ isset($title) ? '  ' . $title : '' }}</title>
         @endif
 
         {{-- Favicon --}}
