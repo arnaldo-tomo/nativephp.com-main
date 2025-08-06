@@ -15,9 +15,9 @@
                     },
                 )
             }"
-                class="truncate text-6xl font-extrabold uppercase min-[400px]:text-7xl md:text-8xl">
-                {{-- LARVEL Lusophone --}}
-                {{-- <span class="sr-only">Laravel</span> --}}
+                class="truncate text-6xl md:mt-[100px] font-extrabold uppercase min-[400px]:text-7xl md:text-8xl">
+
+                <span class="sr-only">Laravel</span>
             </h1>
             {{-- Native --}}
             <div class="relative">
