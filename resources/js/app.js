@@ -113,9 +113,9 @@ Livewire.start()
 
 // Docsearch
 docsearch({
-    appId: 'ZNII9QZ8WI',
-    apiKey: '9be495a1aaf367b47c873d30a8e7ccf5',
-    indexName: 'nativephp',
+    appId: '7RRFZHMS9K',                           // Seu Application ID
+    apiKey: '7ba875214da19f0f426c6ff5e61cec00',    // Sua Search API Key
+      indexName: 'laravel-lusophone',
     insights: true,
     container: '#docsearch',
     debug: false,
