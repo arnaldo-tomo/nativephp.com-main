@@ -46,7 +46,7 @@
                 class="size-5"
                 aria-hidden="true"
             />
-            <div>Let's get to v1!</div>
+            <div>Let's get to v3!</div>
         </a>
     </div>
 </div>
