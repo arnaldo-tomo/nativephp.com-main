@@ -46,11 +46,15 @@ class ShowDocumentationController extends Controller
         } catch (InvalidArgumentException $e) {
             return $this->redirectToFirstNavigationPage($navigation, $page);
         }
-        SEOTools::setTitle($pageProperties['title'].' - NativePHP '.$platform.' v'.$version);
+    // ← ALTERAR ESTA PARTE:
+        $title = $this->generatePageTitle($pageProperties, $platform, $version, $page);
+        SEOTools::setTitle($title);
         SEOTools::setDescription(Arr::exists($pageProperties, 'description') ? $pageProperties['description'] : '');
 
         return view('docs.index')->with($pageProperties);
     }
+
+
 
     protected function getPageProperties($platform, $version, $page = null): array
     {
@@ -120,7 +124,7 @@ class ShowDocumentationController extends Controller
             ->setActive(\request()->path())
             ->__toString();
 
-        $pageProperties['editUrl'] = "https://github.com/NativePHP/nativephp.com/tree/main/resources/views/docs/{$platform}/{$version}/{$page}.md";
+        $pageProperties['editUrl'] = "https://github.com/arnaldo-tomo/laravel-lusophone";
 
         // Find the next & previous page in the navigation
         $pageProperties['nextPage'] = null;
@@ -325,4 +329,38 @@ class ShowDocumentationController extends Controller
 
         return $factory->make($view, $data, $mergeData);
     }
+
+    // ← NO ShowDocumentationController:
+ protected function generatePageTitle($pageProperties, $platform, $version, $page): string
+    {
+        $pageTitle = $pageProperties['title'] ?? 'Documentation';
+
+        // Detectar se é Laravel Lusophone baseado na URL ou conteúdo
+        if ($this->isLaravelLusophonePage($platform, $version, $page)) {
+            return $pageTitle . ' - Laravel Lusophone';
+        }
+
+        // Título padrão para outras documentações
+        return $pageTitle . ' - documentação ' . $platform . ' v' . $version;
+    }
+
+    // ← ADICIONAR ESTE MÉTODO NOVO:
+    protected function isLaravelLusophonePage($platform, $version, $page): bool
+    {
+        // Lista das páginas Laravel Lusophone
+        $lusophonePages = [
+            'introduction',
+            'installation',
+            'configuration',
+            'validation',
+            'formatting',
+            'translations',
+            'detection',
+            'quick-start'
+        ];
+
+        // Verificar se está na seção getting-started e é uma página Lusophone
+        return in_array($page, $lusophonePages);
+
+}
 }
