@@ -3,7 +3,7 @@
     x-show="!showMobileMenu"
 >
     {{-- Announcement banner goes here --}}
-    {{-- <x-bifrost-banner /> --}}
+    <x-bifrost-banner />
 </div>
 <nav
     class="sticky top-0 z-50 flex flex-col items-center justify-center px-3 pt-px"
@@ -24,7 +24,7 @@
                 aria-label="laravelLusophone Homepage"
             >
                 <x-logo class="h-4 min-[400px]:h-5 sm:h-6" />
-                <span class="sr-only">laravelLusophone</span>
+                <span class="sr-only">laravel Lusophone</span>
             </a>
 
             {{-- V1 Announcement --}}
@@ -116,14 +116,6 @@
                 >
                     Home
                 </a>
-
-                {{-- Decorative circle --}}
-                <div
-                    class="size-[3px] rotate-45 rounded-xs bg-gray-400 transition duration-200 dark:opacity-60"
-                    aria-hidden="true"
-                ></div>
-
-
 
                 {{-- Decorative circle --}}
                 <div
