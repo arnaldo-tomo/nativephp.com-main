@@ -1,8 +1,9 @@
 <?php
+// app/Support/CommonMark/CommonMark.php
 
 namespace App\Support\CommonMark;
 
-use App\Extensions\TorchlightWithCopyExtension;
+// use App\Extensions\TorchlightWithCopyExtension; // ← COMENTAR ESTA LINHA
 use League\CommonMark\CommonMarkConverter;
 use League\CommonMark\Extension\CommonMark\Node\Block\Heading;
 use League\CommonMark\Extension\Table\TableExtension;
@@ -14,7 +15,9 @@ class CommonMark
         $converter = new CommonMarkConverter;
         $converter->getEnvironment()->addRenderer(Heading::class, new HeadingRenderer);
         $converter->getEnvironment()->addExtension(new TableExtension);
-        $converter->getEnvironment()->addExtension(new TorchlightWithCopyExtension);
+
+        // ← COMENTAR OU REMOVER ESTA LINHA:
+        // $converter->getEnvironment()->addExtension(new TorchlightWithCopyExtension);
 
         return $converter->convert($markdown);
     }
