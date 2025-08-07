@@ -1,6 +1,7 @@
 ---
 title: Introdução
 order: 001
+site_title: Laravel Lusophone
 ---
 # A Biblioteca de Localização Portuguesa Mais Completa para Laravel
 
