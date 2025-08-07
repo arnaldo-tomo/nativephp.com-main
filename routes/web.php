@@ -33,8 +33,7 @@ Route::view('terms-of-service', 'terms-of-service');
 Route::view('partners', 'partners')->name('partners');
 Route::view('sponsor', 'sponsoring')->name('sponsoring');
 
-Route::get('blog', [ShowBlogController::class, 'index'])->name('blog');
-Route::get('blog/{article}', [ShowBlogController::class, 'show'])->name('article');
+
 
 Route::get('/docs/{platform}/{version}/{page?}', ShowDocumentationController::class)
     ->where('page', '(.*)')
