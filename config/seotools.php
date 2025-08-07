@@ -10,9 +10,9 @@ return [
          * The default configurations to be used by the meta generator.
          */
         'defaults' => [
-            'title' => 'NativePHP', // set false to total remove
+            'title' => 'laravel lusophone', // set false to total remove
             'titleBefore' => false, // Put defaults.title before page title, like 'It's Over 9000! - Dashboard'
-            'description' => 'Turn your Laravel apps into native desktop and mobile apps', // set false to total remove
+            'description' => 'Traga suas aplicações Laravel para o mundo lusófono com localização automática e culturalmente adaptada.', // set false to total remove
             'separator' => ' - ',
             'keywords' => [],
             'canonical' => false, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
@@ -37,8 +37,8 @@ return [
          * The default configurations to be used by the opengraph generator.
          */
         'defaults' => [
-            'title' => 'NativePHP', // set false to total remove
-            'description' => 'Build native applications, with the tools you already know.', // set false to total remove
+            'title' => 'laravel lusophone', // set false to total remove
+            'description' => 'Traga suas aplicações Laravel para o mundo lusófono com localização automática e culturalmente adaptada.', // set false to total remove
             'url' => null, // Set null for using Url::current(), set false to total remove
             'type' => false,
             'site_name' => false,
@@ -61,8 +61,8 @@ return [
          * The default configurations to be used by the json-ld generator.
          */
         'defaults' => [
-            'title' => 'NativePHP', // set false to total remove
-            'description' => 'Build native applications, with the tools you already know.', // set false to total remove
+            'title' => 'laravel lusophone', // set false to total remove
+            'description' => 'Traga suas aplicações Laravel para o mundo lusófono com localização automática e culturalmente adaptada.', // set false to total remove
             'url' => false, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
             'type' => 'WebPage',
             'images' => [],
