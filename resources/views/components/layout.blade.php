@@ -18,17 +18,25 @@
         $defaultSeoTitle = config('seotools.meta.defaults.title');
     @endphp
 
-    @if ($seoTitle === $defaultSeoTitle || empty($seoTitle))
-        <title>{{ isset($title) ? '  ' . $title : '' }}</title>
+    @if($seoTitle === $defaultSeoTitle || empty($seoTitle))
+        <title>{{  $title  }}</title>
+    @else
+   <title>Documentação - Laravel Lusophone</title>
     @endif
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://laravel.com//img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://laravel.com//img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://laravel.com//img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="https://laravel.com//img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="https://laravel.com//img/favicon/safari-pinned-tab.svg" color="#ff2d20">
-    <link rel="shortcut icon" href="https://laravel.com//img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon.webp') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon.webp') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon.webp') }}">
+    <link rel="manifest" href="{{ asset('https://laravel.com//img/favicon/site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ asset('favicon.webp') }}" color="#ff2d20">
+    <link rel="shortcut icon" href="{{ asset('favicon.webp') }}">
+
+    <link rel="stylesheet" href="{{ asset('build/assets/app-2497e6ec.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-69b48c12.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/docsearch-71d1b690.css') }}">
+     <script src="{{ asset('build/assets/app-bc9a2dac.js') }}"></script>
+
     <meta name="msapplication-TileColor" content="#ff2d20">
     <meta name="msapplication-config" content="https://laravel.com//img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
