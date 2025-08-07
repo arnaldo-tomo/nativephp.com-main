@@ -56,11 +56,24 @@ class ShowDocumentationController extends Controller
     {
         $markdownFileName = $platform.'.'.$version.'.'.($page ?? 'index');
 
+    try {
+        // Em vez de processar como Blade, ler como texto puro
+        $filePath = resource_path("views/docs/{$platform}/{$version}/{$page}.md");
+
+        if (!file_exists($filePath)) {
+            throw new InvalidArgumentException("File not found: {$filePath}");
+        }
+
+        $content = file_get_contents($filePath);
+    } catch (\Throwable $e) {
+        // Se não encontrar o ficheiro específico, tentar o método original
         $content = $this->getMarkdownView("docs.{$markdownFileName}", [
             'user' => auth()->user(),
         ])->render();
+    }
 
         $document = YamlFrontMatter::parse($content);
+        // $document = YamlFrontMatter::parse($content);
         $pageProperties = $document->matter();
 
         $versionProperties = YamlFrontMatter::parseFile(resource_path("views/docs/{$platform}/{$version}/_index.md"));
