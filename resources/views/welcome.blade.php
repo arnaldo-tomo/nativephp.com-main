@@ -128,7 +128,7 @@
                                 d="M94 0.5H47.3449C41.942 0.5 36.7691 2.68588 33.0033 6.56012L0.5 40"
                                 stroke="currentColor" stroke-dasharray="5 5" />
                         </svg>
-                        <a href="https://www.youtube.com/watch?v=laravel-lusophone-intro" target="_blank" rel="noopener"
+                        <a href="https://www.youtube.com/@arnaldo-tomo" target="_blank" rel="noopener"
                             class="relative -top-5 grid size-10 place-items-center rounded-full bg-black/30 text-white ring-1 ring-white/10 backdrop-blur-sm transition duration-300 ease-in-out will-change-transform group-hover:scale-110 group-hover:text-[#7ABFFF]"
                             aria-label="Assistir vídeo de introdução do Laravel Lusophone no YouTube">
                             <svg xmlns="http://www.w3.org/2000/svg" class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -163,7 +163,7 @@
                     },
                 )
             }"
-                class="truncate text-6xl font-extrabold text-violet-600 uppercase min-[400px]:text-7xl md:text-8xl" aria-hidden="true">
+                class="truncate text-6xl sm:mx5 font-extrabold text-violet-600 uppercase min-[400px]:text-7xl md:text-8xl" aria-hidden="true">
                 Lusophone
             </h1>
 
@@ -188,7 +188,7 @@
 
         {{-- Video for mobile --}}
         <div class="grid place-items-center pt-4 lg:hidden">
-            <a href="https://www.youtube.com/watch?v=laravel-lusophone-intro" target="_blank" rel="noopener" class="group relative"
+            <a href="https://www.youtube.com/@arnaldo-tomo" target="_blank" rel="noopener" class="group relative"
                 aria-label="Assistir vídeo introdutório do Laravel Lusophone">
                 <div class="absolute top-1/2 right-1/2 grid size-16 translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white/10 text-white ring-1 ring-white/10 backdrop-blur-sm transition duration-300 ease-in-out will-change-transform group-hover:scale-110 group-hover:text-[#7ABFFF]">
                     <svg xmlns="http://www.w3.org/2000/svg" class="size-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -196,7 +196,7 @@
                     </svg>
                     <span class="sr-only">Reproduzir vídeo</span>
                 </div>
-                <img src="{{ Vite::asset('resources/images/arnaldo-tomo-lusophone.webp') }}"
+                <img src="{{ asset('Idiomas.webp') }}"
                     alt="Arnaldo Tomo apresentando o Laravel Lusophone em conferência"
                     class="w-full max-w-[505px] rounded-xl" width="505" height="284" loading="lazy" />
             </a>
@@ -374,7 +374,7 @@
                     class="inline-block rounded-full px-3 py-1 text-sm font-medium uppercase ring-1 ring-green-600 text-green-600 dark:ring-green-400 dark:text-green-400">
                     🚀 Instalação Rápida
                 </div>
-                <h2 id="lusophone-talk-title" x-init="() => {
+                {{-- <h2 id="lusophone-talk-title" x-init="() => {
                     motion.inView($el, (element) => {
                         motion.animate(
                             $el, {
@@ -388,8 +388,8 @@
                     })
                 }"
                     class="pt-2.5 text-xl font-medium capitalize opacity-0">
-                    Laravel Lusophone: Pronto em 30 Segundos
-                </h2>
+                    Laravel Lusophone
+                </h2> --}}
                 <p x-init="() => {
                     motion.inView($el, (element) => {
                         motion.animate(
