@@ -528,7 +528,7 @@
                 </div>
                 <div class="w-px h-8 bg-gray-300 dark:bg-gray-600"></div>
                 <div class="text-center">
-                    <div class="text-2xl font-bold text-blue-600">4</div>
+                    <div class="text-2xl font-bold text-blue-600">8</div>
                     <div class="text-sm text-gray-600 dark:text-gray-400">Países</div>
                 </div>
                 <div class="w-px h-8 bg-gray-300 dark:bg-gray-600"></div>
