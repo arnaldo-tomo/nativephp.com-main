@@ -34,7 +34,7 @@
 
     {{-- Title --}}
     <h2 class="font-medium">
-        NativePHP for Desktop and Mobile have reached v1!
+    É oficial! #LARAVELLUSOPHONE v1.0 chegou com tudo!
     </h2>
 
     {{-- Dot 1 --}}
