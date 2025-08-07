@@ -3,7 +3,7 @@
     x-show="!showMobileMenu"
 >
     {{-- Announcement banner goes here --}}
-    <x-bifrost-banner />
+    {{-- <x-bifrost-banner /> --}}
 </div>
 <nav
     class="sticky top-0 z-50 flex flex-col items-center justify-center px-3 pt-px"
@@ -21,19 +21,19 @@
             {{-- Logo --}}
             <a
                 href="/"
-                aria-label="NativePHP Homepage"
+                aria-label="laravelLusophone Homepage"
             >
                 <x-logo class="h-4 min-[400px]:h-5 sm:h-6" />
-                <span class="sr-only">NativePHP</span>
+                <span class="sr-only">laravelLusophone</span>
             </a>
 
             {{-- V1 Announcement --}}
             <a
-                href="https://github.com/orgs/NativePHP/discussions/547"
+                href="https://github.com/arnaldo-tomo/laravel-lusophone"
                 class="group relative z-0 hidden items-center overflow-hidden rounded-full bg-gray-200 px-2.5 py-1.5 text-xs transition duration-200 will-change-transform hover:scale-x-105 lg:inline-flex dark:bg-slate-800"
                 target="_blank"
-                aria-label="Read about NativePHP version 1 release"
-                title="Read the NativePHP v1 announcement"
+                aria-label="Read about laravelLusophone version 1 release"
+                title="Read the laravelLusophone v1 announcement"
             >
                 <div
                     class="@container absolute inset-0 flex items-center"
@@ -59,17 +59,16 @@
                         class="-mt-px size-3.5"
                         aria-hidden="true"
                     />
-                    <span class="font-normal">v1 is here!</span>
+                    <span class="font-normal">v1 está aqui!!</span>
                     <span class="sr-only">
-                        NativePHP version 1 has been released - click to learn
-                        more
+               A versão 1 do laravelLusophone foi lançada - clique para saber mais
                     </span>
                 </span>
             </a>
 
             {{-- 👇 Temporarily disabled in favor of the v1 announcement button --}}
             {{-- Version badge --}}
-{{--
+
                 <div
                 class="hidden rounded-full bg-gray-200/60 px-2 py-1 text-xs text-gray-600 lg:block dark:bg-[#16182b] dark:text-[#747ee6] dark:ring-1 dark:ring-cloud"
                 aria-label="Version information"
@@ -77,7 +76,7 @@
                 <a href="/docs/desktop/1/getting-started/releasenotes">
                 {{ $electronGitHubVersion }}
                 </a>
-                </div> --}}
+                </div>
 
         </div>
 
@@ -153,7 +152,7 @@
 
                 {{-- Link --}}
                 <a
-                    href="{{ route('blog') }}"
+                    href="#"
                     @class([
                         'transition duration-200',
                         'font-medium' => request()->routeIs('blog*'),
@@ -237,13 +236,13 @@
                             })
                         }
                     "
-                    href="/sponsor"
+                    href="#/sponsor"
                     class="relative bg-linear-to-tr from-violet-600 to-violet-300 bg-clip-text font-medium text-transparent dark:from-violet-500 dark:to-white/80"
-                    aria-label="Sponsor NativePHP"
-                    title="Support NativePHP development"
+                    aria-label="Sponsor laravelLusophone"
+                    title="Support laravelLusophone development"
                 >
                     Sponsor
-                    <span class="sr-only">NativePHP on GitHub</span>
+                    <span class="sr-only">laravelLusophone on GitHub</span>
 
                     {{-- Heart 1 --}}
                     <div
