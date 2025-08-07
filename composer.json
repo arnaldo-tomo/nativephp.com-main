@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "algolia/algoliasearch-client-php": "^4.26",
         "artesaos/seotools": "^1.2",
         "blade-ui-kit/blade-heroicons": "^2.3",
         "doctrine/dbal": "^3.9",
@@ -22,10 +23,12 @@
         "livewire/livewire": "^3.6.4",
         "sentry/sentry-laravel": "^4.13",
         "spatie/laravel-menu": "^4.1",
-        "spatie/yaml-front-matter": "^2.0",
+        "spatie/yaml-front-matter": "^2.1",
+        "symfony/finder": "^6.4",
         "symfony/http-client": "^7.2",
         "symfony/mailgun-mailer": "^7.1",
-        "torchlight/torchlight-commonmark": "^0.5.5"
+        "torchlight/torchlight-commonmark": "^0.5.5",
+        "torchlight/torchlight-laravel": "^0.5.14"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
