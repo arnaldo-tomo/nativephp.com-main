@@ -125,7 +125,7 @@
 
                 {{-- Link --}}
                 <a
-                    href="/docs/"
+                    href="/docs/desktop/1/getting-started/releasenotes"
                     @class([
                         'transition duration-200',
                         'font-medium' => request()->is('docs*'),
